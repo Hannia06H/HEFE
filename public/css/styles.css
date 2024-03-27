@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #FF0000; /* Color rojo */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Para alinear los elementos a los extremos */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px; /* Espacio entre los enlaces */
+}
+
+.navbar-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Para hacer la imagen circular */
+    margin-right: 10px; /* Espacio entre la imagen y los enlaces */
+}
+
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
