@@ -5,13 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Proveedor extends Model
+class Articulo extends Model
 {
     use HasFactory;
-<<<<<<< HEAD
-    protected $table='proveedores';
-=======
-    protected $table = 'proveedores';
-
->>>>>>> origin/main
+    protected $fillable=['descripcion', 'precio', 'stock'];
 }

@@ -1,0 +1,19 @@
+.bj_font {
+  background-color: red;
+  color: white;
+  width: auto;
+  height: 50px;
+  font-size: 25px;
+}
+.esp {
+  padding: center;
+  margin: 10px;
+}
+.cen-form {
+  width: 500px; /* Ancho del aside */
+  padding: 20px; /* Espacio interno del aside */
+  border: 1px solid #ccc; /* Borde del aside */
+}
+.art-cent {
+  padding-top: 30px;
+}
