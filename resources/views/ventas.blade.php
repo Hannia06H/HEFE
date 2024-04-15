@@ -39,10 +39,46 @@
             font-weight: bold;
         }
     </style>
+     <style>
+        /* Estilos para hacer la navegación horizontal */
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        header nav ul li {
+            float: left;
+        }
+
+        header nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        header nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <header>
+<header>
         <h1>Papagani</h1>
+        <nav>
+            <ul>
+                <li><a href="/inv">Inventario</a></li>
+
+                <li><a href="/proveedores">Proveedores</a></li>
+                <li><a href="/personal">Personal</a></li>
+                <li><a href="/informe_devolucion">Devoluciones</a></li>
+            </ul>
+        </nav>
     </header>
     <div id="ventas">
         <h2 id="ventas">Ventas</h2>
