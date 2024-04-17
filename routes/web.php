@@ -9,8 +9,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/vender', function () {
-    return view('vender');
+Route::get('/login', function () {
+    return view('home');
 });
 
 
@@ -38,6 +38,7 @@ Route::controller(EmpleadoController::class, )->group(function () {
 
     Route::get('/ventas', 'ventas');
     Route::post('/ventas', 'buscarProd')->name('buscarProd');
+    Route::post('/agregar-producto', 'EmpleadoController@agregarProducto')->name('agregar.producto');
 
 });
 

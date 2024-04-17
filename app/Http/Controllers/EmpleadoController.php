@@ -153,6 +153,17 @@ class EmpleadoController extends Controller
         $producto=Inventario::where('nombre',$nombre)->get();
         return view('ventas', compact('producto')); 
     }
+    public function agregarProducto(Request $request)
+{
+    $producto = new Producto();
+    $producto->nombre = $request->input('nombre');
+    $producto->precio = $request->input('precio');
+    $producto->cantidad = $request->input('cantidad');
+    $producto->save();
+
+    return redirect()->back()->with('success', 'Producto agregado correctamente');
+}
+
     }
 
 

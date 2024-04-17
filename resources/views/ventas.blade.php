@@ -112,6 +112,8 @@
                             <td class="col">{{$producto->precioCliente}}</td>
                             <td class="col">{{$producto->cantidad}}</td>
                             <td class="col">
+                            <form action="{{ route('agregar.producto') }}" class="form-horizontal" method="post" enctype="multipart/form-data">
+
                             </td>
                         </tr>
                     @endforeach
